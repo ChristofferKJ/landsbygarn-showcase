@@ -1,67 +1,38 @@
 /* src/TopNavBar.css */
-nav {
-  background-color: #fffff1;
-  padding: 20px 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  visibility: visible;
+.topnav-right {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  transition: transform 0.3s ease-out, opacity 0.3s ease-out; /* Add opacity transition */
+  transition-timing-function: ease-in;
+  transition: 0.5s
 }
 
-.logo {
-  font-family: "Droid Serif", serif;
+.a {
+  font-family: "Droid serif", sans-serif;
   font-weight: bold;
-  font-size: 28px;
-  color: #a35e4e;
+  font-size: 24px;
+  color: transparent;
+  transition-timing-function: ease-in;
+  transition: 0.5s
 }
 
-
-ul {
-  visibility: visible;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  margin-right: 20px;
-  align-items: center; /* Vertically center the navigation items */}
-
-li {
-  margin-right: 20px;
-}
- 
-
-a {
-  text-decoration: none;
-  font-family: "Helvetica", sans-serif; /* Use the Roboto font */
-  font-weight: bold; /* Semibold weight in Roboto */
-  font-size: 13px;
-  color: #a35e4e;
+.a__color {
+  color: black;
 }
 
-a:hover {
+.a:hover {
   color: #e3c7bd;
 }
 
+.a__hide {
+  visibility: hidden;
+}
 
 .show {
   /* Keep the navigation bar fully visible when shown */
   visibility: visible;
-  transition: visibility 0s linear; /* Remove transition for the show state */
 }
 
 .hide {
   /* Make the navigation bar invisible when hidden */
   visibility: hidden;
-  transition: visibility 0.3s ease-out; /* Add transition for the hide state */
-}
-
-/* Add margin or padding to the page content */
-body {
-  margin-top: 100px;
 }
 

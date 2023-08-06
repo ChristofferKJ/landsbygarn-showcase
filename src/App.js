@@ -5,9 +5,14 @@ import TopNavBar from './components/TopNavBar';
 
 function App() {
   return (
-    <div className="App">
-       <TopNavBar/>
-        <ProductsGrid />
+    <div>
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div>
+          <span className='logo flex fixed'>Landsbygarn</span>
+        </div>
+        <TopNavBar className='navbar' />
+      </div>
+      <ProductsGrid />
     </div>
   );
 }

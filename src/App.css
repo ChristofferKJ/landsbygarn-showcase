@@ -1,4 +1,17 @@
-.App {
-  text-align: center;
+.logo {
+  font-family: "Droid Serif", serif;
+  font-weight: bold;
+  font-size: 32px;
+  color: #a35e5c;
 }
 
+@media(width > 200px) { 
+  .logo { 
+    mix-blend-mode: difference
+  }
+}
+
+
+body{
+  background-color: bisque;
+}
