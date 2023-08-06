@@ -2,7 +2,7 @@
 .topnav-right {
   width: 100%;
   transition-timing-function: ease-in;
-  transition: 0.5s
+  transition: 0.5s;
 }
 
 .a {
@@ -11,7 +11,7 @@
   font-size: 24px;
   color: transparent;
   transition-timing-function: ease-in;
-  transition: 0.5s
+  transition: 0.5s;
 }
 
 .a__color {
@@ -36,3 +36,6 @@
   visibility: hidden;
 }
 
+.navbar {
+  transition: height 0.3s ease;
+}

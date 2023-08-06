@@ -5,13 +5,16 @@
   color: #a35e5c;
 }
 
-@media(width > 200px) { 
-  .logo { 
-    mix-blend-mode: difference
+@media (width > 200px) {
+  .logo {
+    mix-blend-mode: difference;
   }
 }
 
-
-body{
+body {
   background-color: bisque;
+}
+
+.navbar {
+  transition: height 0.3s ease;
 }

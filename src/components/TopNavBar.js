@@ -1,15 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import '../css/TopNavBar.css';
+import React, { useEffect, useState } from "react";
+import "../css/TopNavBar.css";
 
 const TopNavBar = () => {
-  const [show, setShow] = useState(true)
-  const controlNavbar = () => {
-    if (window.scrollY > 100) {
-      setShow(false)
-    } else {
-      setShow(true)
-    }
-  }
+  const [show, setShow] = useState(true);
 
   useEffect(() => {
     let prevScrollY = window.scrollY;
@@ -29,43 +22,39 @@ const TopNavBar = () => {
       prevScrollY = currentScrollY;
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   return (
-
-   <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-       
+    <div className={`navbar w-full fixed z-40`}>
+      <div className="mx-auto container flex px-4">
+        <ul
+          className={`flex ml-auto items-center gap-6 transition-all duration-200 h-16 ${
+            show ? "opacity-100" : "opacity-0"
+          }`}
+        >
           <li>
-            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+            <a className="hover:text-lime-400" href="/">
+              Services
+            </a>
           </li>
           <li>
-            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+            <a className="hover:text-lime-400" href="/">
+              Pricing
+            </a>
           </li>
           <li>
-            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+            <a className="hover:text-lime-400" href="/">
+              Contact
+            </a>
           </li>
         </ul>
       </div>
-
-
-
-
-
-
-
-
-    //     <div className='topnav-right'>
-    //       <a className={`a ${show ? 'a__color' : ''} ${!show ? 'a__hide' : ''}`} href="#products">Produkter</a>
-    //       <a className={`a ${show ? 'a__color' : ''} ${!show ? 'a__hide' : ''}`} href="#about">Om</a>
-    //       <a className={`a ${show ? 'a__color' : ''} ${!show ? 'a__hide' : ''}`} href="#contact">Kontakt</a>
-    //     </div>
+    </div>
   );
 };
 
 export default TopNavBar;
-
