@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "../css/TopNavBar.css";
 
 const TopNavBar = () => {
   const [show, setShow] = useState(true);
@@ -30,25 +29,25 @@ const TopNavBar = () => {
   }, []);
   return (
     <div className={`navbar w-full fixed z-40`}>
-      <div className="mx-auto container flex px-4">
+      <div className="mx-auto container flex">
         <ul
           className={`flex ml-auto items-center gap-6 transition-all duration-200 h-16 ${
             show ? "opacity-100" : "opacity-0"
           }`}
         >
           <li>
-            <a className="hover:text-lime-400" href="/">
-              Services
+            <a className="navbar-right hover:white" href="/Products">
+              Produkter
             </a>
           </li>
           <li>
-            <a className="hover:text-lime-400" href="/">
-              Pricing
+            <a className="navbar-right" href="/About">
+              Om os 
             </a>
           </li>
           <li>
-            <a className="hover:text-lime-400" href="/">
-              Contact
+            <a className="navbar-right" href="/Contact">
+              Kontakt
             </a>
           </li>
         </ul>

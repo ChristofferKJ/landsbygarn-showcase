@@ -2,7 +2,14 @@
   font-family: "Droid Serif", serif;
   font-weight: bold;
   font-size: 32px;
-  color: #a35e5c;
+  color: #5ca1a3;
+}
+
+.routes-wrapper{
+
+
+padding-top: 70px;
+
 }
 
 @media (width > 200px) {
@@ -17,4 +24,35 @@ body {
 
 .navbar {
   transition: height 0.3s ease;
+}
+
+.navbar {
+  font-family: "Droid serif", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #5ca1a3;
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+}
+
+.navbar-right:hover{
+  opacity: 0.5;
+}
+
+
+@media (width > 200px) {
+  .navbar {
+    mix-blend-mode: difference;
+  }
+}
+
+
+.show {
+  /* Keep the navigation bar fully visible when shown */
+  visibility: visible;
+}
+
+.hide {
+  /* Make the navigation bar invisible when hidden */
+  visibility: hidden;
 }
