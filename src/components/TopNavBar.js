@@ -28,7 +28,7 @@ const TopNavBar = () => {
     };
   }, []);
   return (
-    <div className={`navbar w-full fixed z-40`}>
+    <div className={`navbar w-full fixed z-10`}>
       <div className="mx-auto container flex">
         <ul
           className={`flex ml-auto items-center gap-6 transition-all duration-200 h-16 ${
@@ -42,7 +42,7 @@ const TopNavBar = () => {
           </li>
           <li>
             <a className="navbar-right" href="/About">
-              Om os 
+              Om os
             </a>
           </li>
           <li>
