@@ -36,17 +36,17 @@ const TopNavBar = () => {
           }`}
         >
           <li>
-            <a className="navbar-right hover:white" href="/Products">
+            <a className="navbar-right hover:white" href="/products">
               Produkter
             </a>
           </li>
           <li>
-            <a className="navbar-right" href="/About">
+            <a className="navbar-right" href="/about">
               Om os
             </a>
           </li>
           <li>
-            <a className="navbar-right" href="/Contact">
+            <a className="navbar-right" href="/contact">
               Kontakt
             </a>
           </li>

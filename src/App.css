@@ -8,7 +8,8 @@
 .routes-wrapper{
 
 
-padding-top: 70px;
+padding-top: 80px;
+padding-bottom: 150px;
 
 }
 
@@ -28,8 +29,7 @@ body {
 
 .navbar {
   font-family: "Droid serif", sans-serif;
-  font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   color: #5ca1a3;
   transition-timing-function: ease-in;
   transition: 0.5s;

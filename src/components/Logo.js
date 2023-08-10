@@ -2,7 +2,7 @@ const Logo = () => {
   return (
     <div className="container mx-auto">
       <a
-        href="www.google.dk"
+        href="/"
         className="z-50 logo fixed top-0 h-16 flex items-center"
       >
         Landsbygarn
