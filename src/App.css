@@ -5,11 +5,11 @@
   color: #5ca1a3;
 }
 
-.routes-wrapper{
+.routes-wrapper {
 
 
-padding-top: 80px;
-padding-bottom: 150px;
+  padding-top: 80px;
+  padding-bottom: 150px;
 
 }
 
@@ -35,7 +35,7 @@ body {
   transition: 0.5s;
 }
 
-.navbar-right:hover{
+.navbar-right:hover {
   opacity: 0.5;
 }
 
@@ -56,3 +56,10 @@ body {
   /* Make the navigation bar invisible when hidden */
   visibility: hidden;
 }
+
+
+
+
+
+
+
