@@ -99,12 +99,18 @@ const LandingPage = () => {
             </section> */}
 
 
-            <div class="mx-auto max-w-screen-2xl  sm:px-6 lg:px-8">
+            {/* <div class="mx-auto max-w-screen-2xl  sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 gap-4 md:grid-cols-1">
-                    <div className="LeftGrid p-8  lg:px-16 lg:py-24">
+                    <div className="LeftGrid p-8  lg:px-16 lg:py-12">
+
+                    <p class="hidden text-white/90 sm:mt-4 sm:block">
+                                Velkommen til Landsbygarn. Hos os kan du købe DROPS garn til billige priser. Vi har altid et godt udvalg, så kom og besøg i Nødager og gør et godt køb.
+                                Du kan finde os       <a className='font-bold' href="/about">her</a>.
+
+                            </p>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
         </section>
 

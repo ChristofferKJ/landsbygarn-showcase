@@ -16,7 +16,7 @@ const About = () => {
                         Jeg glæder mig til vi ses hos Landbygarn</p>
                 </div>
                 <div class="w-full lg:w-8/12">
-                    <img class="w-full h-full" src="https://i.ibb.co/FhgPJt8/Rectangle-116.png" alt="A group of People" />
+                    <img class="w-full h-full rounded-md" src="https://landsbygarn.dk/images/landingpage/landsbygarn-skilt-about.jpg" alt="A group of People" />
                 </div>
             </div>
 
