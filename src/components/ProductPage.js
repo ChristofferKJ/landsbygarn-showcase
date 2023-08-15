@@ -15,8 +15,30 @@ export default function ProductPage() {
 
     const fetchProducts = async () => {
       try {
-        // const response = await fetch('api/fetchallproducts.php');
-        const response = await fetch("../fetchAirMix.json");
+        let response;
+
+        console.debug(params);
+
+
+        if (process.env.NODE_ENV === "production") {
+          response =  await fetch('api/fetchgiventype.php' + new URLSearchParams({
+            foo: params
+          })); 
+        } else if (process.env.NODE_ENV === "development") {
+
+          console.debug('https://www.landsbygarn.dk/api/fetchgiventype.php' + new URLSearchParams({
+            foo: params,
+            bar: 2  
+          })); 
+          response =  await fetch('https://www.landsbygarn.dk/api/fetchgiventype.php', { method: 'GET',
+          body: JSON.stringify(params),
+          headers: {
+              'Content-type': 'application/json; charset=UTF-8'
+        }}); 
+        }
+
+
+
         const data = await response.json();
         setProducts(data);
       } catch (error) {
@@ -37,7 +59,7 @@ export default function ProductPage() {
           <ImageGallery showPlayButton={false} showFullscreenButton={false} items={products.map(product => ({
             original: product.url,
             thumbnail: product.url, // You can adjust this if you need different thumbnail URLs
-          }))}  /> </div>
+          }))} /> </div>
       </div>
     </div>
   )

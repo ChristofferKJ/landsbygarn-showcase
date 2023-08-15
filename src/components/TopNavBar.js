@@ -29,11 +29,10 @@ const TopNavBar = () => {
   }, []);
   return (
     <div className={`navbar w-full fixed z-10`}>
-      <div className="mx-auto container flex">
+      <div className="mx-auto px-8 container flex">
         <ul
-          className={`flex ml-auto items-center gap-6 transition-all duration-200 h-16 ${
-            show ? "opacity-100" : "opacity-0"
-          }`}
+          className={`flex ml-auto items-center gap-6 transition-all duration-200 h-16 ${show ? "opacity-100" : "opacity-0"
+            }`}
         >
           <li>
             <a className="navbar-right hover:white" href="/products">
@@ -42,14 +41,9 @@ const TopNavBar = () => {
           </li>
           <li>
             <a className="navbar-right" href="/about">
-              Om os
-            </a>
+              Om            </a>
           </li>
-          <li>
-            <a className="navbar-right" href="/contact">
-              Kontakt
-            </a>
-          </li>
+
         </ul>
       </div>
     </div>

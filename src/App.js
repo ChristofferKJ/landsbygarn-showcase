@@ -9,25 +9,27 @@ import { BrowserRouter } from "react-router-dom";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import LandingPage from "./components/LandingPage";
-
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <BrowserRouter>
-  
-      <Logo />
-      <TopNavBar className="navbar" />
-      
-      <div className="routes-wrapper px-40">
-            <Routes>
-              <Route exact path="/" element={<LandingPage/>}/>
-              <Route exact path="/products" element={<ProductsGrid />} />
-              <Route exact path="/about" element={<About />} />
-              <Route exact path="/contact" element={<ProductsGrid />} />
-              <Route exact path="/products/:id" element={<ProductPage />} />
-            </Routes>
-      </div>
+    <BrowserRouter >
+      <div class="flex flex-col h-screen justify-between">
 
+        <Logo  />
+        <TopNavBar className="navbar"/>
+
+        <div className="routes-wrapper mb-auto ">
+          <Routes>
+            <Route  path="/" element={<LandingPage />} />
+            <Route  path="/products" element={<ProductsGrid />} />
+            <Route  path="/about" element={<About />} />
+            <Route  path="/products/:product_name" element={<ProductPage />} />
+          </Routes>
+        </div>
+
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }
