@@ -34,18 +34,6 @@ const ProductsGrid = () => {
   }, []);
 
 
-
-  const openPopup = (product) => {
-    setSelectedProduct(product);
-    console.log(product);
-    setIsPopupOpen(true);
-  };
-
-  const closePopup = () => {
-    setSelectedProduct(null);
-    setIsPopupOpen(false);
-  };
-
   const navigate = useNavigate();
 
   return (
@@ -55,31 +43,34 @@ const ProductsGrid = () => {
           <div
             key={product?.product_name}
             onClick={() => {
-              setSelectedProduct(product);
-              window.my_modal_2.showModal();
+              // setSelectedProduct(product);
+              // window.my_modal_2.showModal();
+              navigate("/products/" + product?.product_name);
             }}
-            className="cursor-pointer">
+            className={`cursor-pointer relative`}
+          >
             <img
-              className="h-auto max-w-full rounded-lg content-center"
+              className={`h-auto max-w-full rounded-lg ${selectedProduct === product ? "" : "transform hover:scale-110 transition-transform"
+                }`}
               src={product?.image_url}
-              alt={selectedProduct?.product_name}
+              alt={product?.product_name}
             />
+            {selectedProduct !== product && (
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-75 text-white opacity-0 transition-opacity hover:opacity-100 rounded-lg">
+                <div className="text-center p-4">
+                  <div className="font-bold text-xl mb-2">
+                    {product?.product_name}
+                  </div>
+                  <div className="text-base">
+                    {product?.title_text}
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         ))}
       </div>
 
-      <dialog id="my_modal_2" className="modal">
-        <form method="dialog" className="modal-box">
-          <h3 className="font-bold text-lg">{selectedProduct?.product_name}</h3>
-          <img src={selectedProduct?.image_url} />
-          <p>{selectedProduct?.title_text}</p>
-
-          <button className="btn">Gå til produkt</button>
-        </form>
-        <form method="dialog" className="modal-backdrop">
-          <button>close</button>
-        </form>
-      </dialog>
     </div>
   );
 };

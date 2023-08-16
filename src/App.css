@@ -5,8 +5,14 @@
   color: #5ca1a3;
 }
 
+.textColorFooter{
+  background-color: #F6F4E8;
+
+}
+
 .routes-wrapper {
-  padding-top: 80px;
+  padding-top: 80px;  
+  background-color: #F6F4E8;
 
 }
 
@@ -16,11 +22,11 @@
   }
 }
 
-
-
 body{
   background-color: #F6F4E8;
 }
+
+
 .navbar {
   transition: height 0.3s ease;
   font-size: 18px;
@@ -41,15 +47,6 @@ body{
 }
 
 
-.show {
-  /* Keep the navigation bar fully visible when shown */
-  visibility: visible;
-}
-
-.hide {
-  /* Make the navigation bar invisible when hidden */
-  visibility: hidden;
-}
 
 
 
