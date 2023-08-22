@@ -28,26 +28,40 @@ const TopNavBar = () => {
     };
   }, []);
   return (
-    <div className={`navbar w-full fixed z-10`}>
-      <div className="mx-auto px-8 container flex">
-        <ul
-          className={`flex ml-auto items-center gap-6 transition-all duration-200 h-16 ${show ? "opacity-100" : "opacity-0"
-            }`}
-        >
-          <li>
-            <a className="navbar-right hover:white" href="/products">
-              Produkter
-            </a>
-          </li>
-          <li>
-            <a className="navbar-right" href="/about">
-              Om            </a>
-          </li>
+    <div className={`navbar z-10 w-full fixed mx-auto`}>
+      <div className="mx-auto px-4 container flex">
 
-        </ul>
+        <div className={`flex ml-auto items-center gap-6 transition-all duration-200 h-16 ${show ? "opacity-100" : "opacity-0"
+          }`}>
+          <ul className="menu menu-horizontal">
+            <li>
+              <details >
+                <summary >
+                  Menu
+                </summary>
+                <ul className="p-2 bg-white">
+                  <li><a href="/Products">Produkter</a></li>
+                  <li><a href="/About">Om os</a></li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </div>
       </div>
+
     </div>
+
+
+
+
+
+
+
+
+
+
   );
 };
 
 export default TopNavBar;
+

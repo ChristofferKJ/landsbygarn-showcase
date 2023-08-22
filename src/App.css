@@ -30,7 +30,7 @@ body{
 .navbar {
   transition: height 0.3s ease;
   font-size: 18px;
-  color: #5ca1a3;
+  color: #9A5345;
   transition-timing-function: ease-in;
   transition: 0.5s;
 }
@@ -40,11 +40,7 @@ body{
 }
 
 
-@media (width > 200px) {
-  .navbar {
-    mix-blend-mode: difference;
-  }
-}
+
 
 
 

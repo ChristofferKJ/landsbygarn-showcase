@@ -14,7 +14,7 @@ import { Footer } from "./components/Footer";
 function App() {
   return (
     <BrowserRouter >
-      <div class="flex flex-col h-screen justify-between">
+      <div className="flex flex-col h-screen justify-between">
 
         <Logo  />
         <TopNavBar className="navbar"/>
@@ -25,6 +25,8 @@ function App() {
             <Route  path="/products" element={<ProductsGrid />} />
             <Route  path="/about" element={<About />} />
             <Route  path="/products/:product_name" element={<ProductPage />} />
+            {/* <Route  path="/contact" element={<Contact />} /> */}
+            
           </Routes>
         </div>
 

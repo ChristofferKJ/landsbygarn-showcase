@@ -27,11 +27,27 @@ const LandingPage = () => {
                             </p>
 
                             <div class="mt-4 md:mt-8">
-                                <a
-                                    href="/Products"
-                                    class="inline-block rounded border border-white bg-white px-12 py-3 text-sm font-medium text-blue-500 transition hover:bg-transparent hover:text-white"
-                                >
-                                    Se vores produkter her                                </a>
+                                <a href="/Products" class="inline-block rounded border border-white bg-white px-12 py-3 text-sm font-medium text-blue-500 transition hover:bg-transparent hover:text-white">
+                                    Se vores produkter her</a>
+                            </div>
+
+                            <div class="mt-4 md:mt-8">
+
+                                <div className='text-xl font-bold text-white'>
+                                    Åbningstider i uge 34
+                                </div>
+
+                                <div className='text-xl  text-white'>
+                                    Tirsdag 10-12 og 14-17
+                                </div>
+
+                                <div className='text-xl  text-white'>
+                                    Torsdag 15.30-17.30
+                                </div>
+
+                                <div className='text-xl  text-white'>
+                                    og efter aftale
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -51,6 +67,7 @@ const LandingPage = () => {
                     </div>
                 </div>
             </div>
+
 
 
         </section>

@@ -59,7 +59,17 @@ const About = () => {
                        
                         <a href="https://www.google.com/maps/place/56%C2%B020'46.9%22N+10%C2%B038'01.9%22E/@56.3463532,10.6316823,17z/data=!3m1!4b1!4m4!3m3!8m2!3d56.3463507!4d10.6338521?entry=ttu" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
                             Åbn i Google Maps          </a>
+
+                            <h1 class="text-3xl lg:text-4xl font-bold mt-10 leading-9 text-gray-800 dark:text-white pb-4">Kontakt</h1>
+                            <p class="max-w-2xl mb-3 font-semibold text-base leading-6 text-gray-600 dark:text-white">Telefon: +45 60 11 81 27</p>
+                            <p class="max-w-2xl mb-3 font-semibold text-base leading-6 text-gray-600 dark:text-white">Mail: kontakt@landsgybarn.dk</p>
+
+                            <p class="max-w-2xl mb-3 font-semibold text-base leading-6 text-gray-600 dark:text-white">Sognevejen 6, 8560 Kolind</p>
+
+                   
+                   
                     </div>
+
 
                 </div>
             </section>
