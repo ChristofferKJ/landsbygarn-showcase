@@ -19,7 +19,7 @@ const ProductsGrid = () => {
         if (process.env.NODE_ENV === "production") {
           response = await fetch('api/fetchalltypes.php');
         } else if (process.env.NODE_ENV === "development") {
-          response = await fetch("fetchalltypes.json");
+          response = await fetch("https://landsbygarn.dk/api/fetchalltypes.php");
         }
 
         const data = await response.json();
@@ -41,11 +41,11 @@ const ProductsGrid = () => {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {products.map((product) => (
           <div
-            key={product?.product_name}
+            key={product?.name}
             onClick={() => {
               // setSelectedProduct(product);
               // window.my_modal_2.showModal();
-              navigate("/products/" + product?.product_name);
+              navigate("/products/" + product?.name);
             }}
             className={`cursor-pointer relative`}
           >
@@ -53,13 +53,13 @@ const ProductsGrid = () => {
               className={`h-auto max-w-full rounded-lg ${selectedProduct === product ? "" : "transform hover:scale-110 transition-transform"
                 }`}
               src={product?.image_url}
-              alt={product?.product_name}
+              alt={product?.name}
             />
             {selectedProduct !== product && (
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-75 text-white opacity-0 transition-opacity hover:opacity-100 rounded-lg">
                 <div className="text-center p-4">
                   <div className="font-bold text-xl mb-2">
-                    {product?.product_name}
+                    {product?.name}
                   </div>
                   <div className="text-base">
                     {product?.title_text}
