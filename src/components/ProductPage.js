@@ -69,8 +69,12 @@ function ProductPage(event) {
           <h1 className="text-2xl font-semibold mb-2 text-center ">{product_name}</h1>
           <p className="text-gray-800 text-2xl  font-semibold py-4 mb-2 text-center">PRIS: {products[0]?.price} kr</p>
           <h2 className="text-lg  text-center font-medium mb-2">{maintype?.title_text}</h2>
-          <p className="text-gray-600 text-center">{maintype?.description}</p>
-          <p className="text-gray-600  font-semibold py-4 mb-2 text-center">{maintype?.made_of}</p>
+          <p className=" py-4 text-center">{maintype?.description}</p>
+          <p className=" font-semibold  mb-2 text-center">Indhold: {maintype?.made_of}</p>
+          <p className=" font-semibold  mb-2 text-center">Garngruppe: {maintype?.garngruppe}</p>
+          <p className=" font-semibold  mb-2 text-center">Strikkefasthed: {maintype?.strikkefasthed}</p>
+          <p className=" font-semibold  mb-2 text-center">Vægt/Længde:  {maintype?.vaegt_laengde}</p>
+
         </div>
       </div>
 
