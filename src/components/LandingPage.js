@@ -41,13 +41,19 @@ const LandingPage = () => {
                                     Tirsdag 10-12 og 14-17
                                 </div>
 
-                                <div className='text-xl  text-white'>
+                                {/* <div className='text-xl  text-white'>
                                     Lørdag 10-12
-                                </div>
+                                </div> */}
 
-                                <div className='text-xl  text-white'>
+                                <div className='text-xl   text-white'>
                                     og efter aftale
                                 </div>
+
+                                <div className='text-xl py-4 font-bold text-white'>
+                                    +45 60 11 81 27
+                                </div>
+
+                                
                             </div>
                         </div>
                     </div>
