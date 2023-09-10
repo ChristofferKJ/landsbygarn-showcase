@@ -18,6 +18,8 @@ const ProductsGrid = () => {
 
         if (process.env.NODE_ENV === "production") {
           response = await fetch('api/fetchalltypes.php');
+          console.log(response); 
+
         } else if (process.env.NODE_ENV === "development") {
           response = await fetch("https://landsbygarn.dk/api/fetchalltypes.php");
           console.log(response); 

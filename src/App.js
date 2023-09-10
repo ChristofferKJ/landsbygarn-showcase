@@ -9,6 +9,8 @@ import { BrowserRouter } from "react-router-dom";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import LandingPage from "./components/LandingPage";
+import Login from "./components/Login";
+
 import { Footer } from "./components/Footer";
 
 function App() {
@@ -18,14 +20,13 @@ function App() {
 
         <Logo  />
         <TopNavBar className="navbar"/>
-
         <div className="routes-wrapper mb-auto ">
           <Routes>
             <Route  path="/" element={<LandingPage />} />
             <Route  path="/products" element={<ProductsGrid />} />
             <Route  path="/about" element={<About />} />
             <Route  path="/products/:product_name" element={<ProductPage />} />
-            {/* <Route  path="/contact" element={<Contact />} /> */}
+            <Route  path="/adminlogin" element={<Login />} />
             
           </Routes>
         </div>

@@ -15,18 +15,18 @@
   background-color: #F6F4E8;
 
 }
-
+/* 
 @media (width > 200px) {
   .logo {
     mix-blend-mode: difference;
   }
-}
+} */
 
 body{
   background-color: #F6F4E8;
 }
 
-
+/* 
 .navbar {
   transition: height 0.3s ease;
   font-size: 18px;
@@ -37,7 +37,7 @@ body{
 
 .navbar-right:hover {
   opacity: 0.5;
-}
+} */
 
 
 
