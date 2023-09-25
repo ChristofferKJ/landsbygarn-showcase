@@ -42,7 +42,8 @@ const LandingPage = () => {
                                 </div>
 
                                 <div className='text-xl  text-white'>
-                                Lørdag 10-12                                </div> 
+                                Lørdag 10-12                                
+                                </div> 
 
                                 <div className='text-xl   text-white'>
                                     og efter aftale
