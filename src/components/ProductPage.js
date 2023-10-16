@@ -74,6 +74,8 @@ function ProductPage(event) {
           <p className=" font-semibold  mb-2 text-center">Garngruppe: {maintype?.garngruppe}</p>
           <p className=" font-semibold  mb-2 text-center">Strikkefasthed: {maintype?.strikkefasthed}</p>
           <p className=" font-semibold  mb-2 text-center">Vægt/Længde:  {maintype?.vaegt_laengde}</p>
+          <p className=" font-semibold  mb-2 text-center">Vaskeanvisning{maintype?.vaskeanvisning}</p>
+          <p className=" font-semibold  mb-2 text-center">Anbefalede pinde:  {maintype?.anbefalede_pinde}</p>
 
         </div>
       </div>
