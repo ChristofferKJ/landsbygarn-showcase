@@ -38,20 +38,20 @@ const LandingPage = () => {
  
 
  <div className='text-xl mt-5 font-bold text-white'>
-                                    Åbningstider i uge 47
+                                    Åbningstider i uge 51
                                 </div>
 
                                 <div className='text-xl  text-white'>
-                                    Tirsdag 10-12 og 14-17 
+                                    Tirsdag 14-17 
                                 </div>
 
                                 <div className='text-xl  text-white'>
-                                Torsdag 15-17                                
+                                Onsdag 15-17                                
                                 </div> 
 
 
                                 <div className='text-xl  text-white'>
-                                Lørdag 10-12                                
+                                Fredag 15-17                                
                                 </div> 
 
                                 <div className='text-xl   text-white'>
