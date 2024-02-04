@@ -14,7 +14,7 @@
 
 :after,
 :before {
-    --tw-content: ""
+    --tw-content: "
 }
 
 html {
@@ -2299,7 +2299,7 @@ input:checked.defaultCheckbox:before {
 }
 
 .before\:content-\[\"\"\]:before {
-    --tw-content: "";
+    --tw-content: ";
     content: var(--tw-content)
 }
 

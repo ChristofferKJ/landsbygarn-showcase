@@ -37,21 +37,25 @@ const LandingPage = () => {
 
  
 
+                            <div className='text-xl mt-5 font-bold text-white'>
+Landsbygarn ønsker alle et godt nytår!
+                                </div>
+
  <div className='text-xl mt-5 font-bold text-white'>
-                                    Åbningstider i uge 51
+                                    Åbningstider i uge 4 og 5 
                                 </div>
 
                                 <div className='text-xl  text-white'>
-                                    Tirsdag 14-17 
+                                    Tirsdag 14-17
                                 </div>
 
-                                <div className='text-xl  text-white'>
-                                Onsdag 15-17                                
-                                </div> 
-
-
-                                <div className='text-xl  text-white'>
+                                {/* <div className='text-xl  text-white'>
                                 Fredag 15-17                                
+                                </div>  */}
+
+
+                                <div className='text-xl  text-white'>
+                                Lørdag 10-12                                
                                 </div> 
 
                                 <div className='text-xl   text-white'>
@@ -59,7 +63,7 @@ const LandingPage = () => {
                                 </div>
 
                                 <div className='text-xl py-4 font-bold text-white'>
-                                    +45 60 11 81 27
+                                   Ring eller skriv på +45 60 11 81 27 for aftale
                                 </div>
 
                                 

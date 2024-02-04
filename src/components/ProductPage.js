@@ -42,9 +42,6 @@ function ProductPage(event) {
         console.error("Error fetching data:", error);
       });
 
-
-
-
     fetch(apiGetDesc)
       .then((response) => response.json())
       .then((data) => {
@@ -56,10 +53,7 @@ function ProductPage(event) {
         console.error("Error fetching data:", error);
       });
 
-
-
   }, [product_name]);
-
 
   return (
     <div className="flex flex-col lg:flex-row px-14 lg:space-x-8">
@@ -76,7 +70,6 @@ function ProductPage(event) {
           <p className=" font-semibold  mb-2 text-center">Vægt/Længde:  {maintype?.vaegt_laengde}</p>
           <p className=" font-semibold  mb-2 text-center">Vaskeanvisning{maintype?.vaskeanvisning}</p>
           <p className=" font-semibold  mb-2 text-center">Anbefalede pinde:  {maintype?.anbefalede_pinde}</p>
-
         </div>
       </div>
 
@@ -94,7 +87,7 @@ function ProductPage(event) {
                 />
                 {selectedProduct === index && (
                   <p className="text-gray-700 absolute bottom-0 left-0 right-0 bg-white bg-opacity-80 px-2">
-                    {product?.product_color}
+                    {product?.color}
                   </p>
                 )}
               </div>
