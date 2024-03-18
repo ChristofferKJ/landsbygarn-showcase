@@ -6,7 +6,7 @@ import ProductPage from "./components/ProductPage";
 import Logo from "./components/Logo";
 import { Route, Routes } from "react-router";
 import { BrowserRouter } from "react-router-dom";
-import Contact from "./components/Contact";
+import Login from "./components/Login";
 import About from "./components/About";
 import LandingPage from "./components/LandingPage";
 import { Footer } from "./components/Footer";
@@ -16,22 +16,23 @@ function App() {
     <BrowserRouter >
       <div className="flex flex-col h-screen justify-between">
 
-        <Logo  />
-        <TopNavBar className="navbar"/>
+        <Logo />
+        <TopNavBar className="navbar" />
 
         <div className="routes-wrapper mb-auto ">
           <Routes>
-            <Route  path="/" element={<LandingPage />} />
-            <Route  path="/products" element={<ProductsGrid />} />
-            <Route  path="/about" element={<About />} />
-            <Route  path="/products/:product_name" element={<ProductPage />} />
-            {/* <Route  path="/contact" element={<Contact />} /> */}
-            
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/products" element={<ProductsGrid />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/products/:product_name" element={<ProductPage />} />
+            <Route path="/login" element={<Login />} />
           </Routes>
         </div>
 
         <Footer />
       </div>
+
+
     </BrowserRouter>
   );
 }
